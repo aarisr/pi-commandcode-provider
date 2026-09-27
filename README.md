@@ -141,7 +141,7 @@ The following environment variables are intended for tests, local mocks, and com
 
 ## Image input
 
-The provider advertises image input only for models marked with the `image` input modality in the official Command Code CLI model catalog. The capability snapshot currently follows `command-code@1.65.0`; unknown models default to text-only until their upstream metadata is reviewed. A daily GitHub Actions job synchronizes the CLI version, image capabilities, reasoning flags, reasoning efforts, and model-specific output limits with the latest published CLI package, also dropping manual effort overrides that upstream has published itself, and opens or updates a reviewable pull request when they change. Pricing remains manually reviewed because temporary promotions and long-context tiers require explicit review.
+The provider advertises image input only for models marked with the `image` input modality in the official Command Code CLI model catalog. The capability snapshot currently follows `command-code@1.66.0`; unknown models default to text-only until their upstream metadata is reviewed. A daily GitHub Actions job synchronizes the CLI version, image capabilities, reasoning flags, reasoning efforts, and model-specific output limits with the latest published CLI package, also dropping manual effort overrides that upstream has published itself, and opens or updates a reviewable pull request when they change. Pricing remains manually reviewed because temporary promotions and long-context tiers require explicit review.
 
 For vision-capable models, Pi's native provider adapters forward image blocks from user messages and tool results using the documented OpenAI or Anthropic message schema. Unknown and text-only models remain marked text-only in Pi.
 
@@ -220,9 +220,11 @@ The Go profile defaults to DeepSeek V4 Flash; GOAT defaults to Grok 4.6 because 
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for local setup and tests. See [RELEASE.md](RELEASE.md) for the release process.
 
-## Maintainer wanted
+## Maintainers
 
-I'm looking for another maintainer. See [#114](https://github.com/patlux/pi-commandcode-provider/issues/114).
+- [@patlux](https://github.com/patlux)
+- [@pierreraby](https://github.com/pierreraby)
+- [@karaaslanz](https://github.com/karaaslanz)
 
 ## License
 
